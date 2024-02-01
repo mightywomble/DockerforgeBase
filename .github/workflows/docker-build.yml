@@ -19,6 +19,5 @@ jobs:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         run: |
           docker build -t mightywomble/dockerforgebase_ubuntu:latest .
-          docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
           docker push mightywomble/dockerforgebase_ubuntu:lates
 
