@@ -11,7 +11,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Install Base Tools
 
 RUN apt update 
-RUN apt install -y wget unzip net-tools nmap btop nano ubuntu-dev-tools build-essential
+RUN apt install -y wget unzip net-tools nmap nano
 RUN apt clean
 RUN rm -rf /var/lib/apt/lists/*
 
